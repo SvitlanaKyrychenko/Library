@@ -41,32 +41,12 @@ const root = {
   }
 };
 
-<<<<<<< HEAD
 
 app.use('/graphql', graphqlHTTP({
   graphiql: true,
   schema: schema,
   rootValue: root
 }));
-=======
-const authors = [ 
-{id: 1, name: 'John Silver'},
-{id: 2, name: 'J.K.R'},
-{id: 3, name: 'Richard Duhkins'}
-]
-
-const books = [
-  {id:1, author_id: 1, title: "John FB", genre:"science"},
-  {id:2, author_id: 1, title: "John SB", genre:"detective"},
-  {id:3, author_id: 2, title: "J.K.R FB", genre:"science"},
-  {id:4, author_id: 2, title: "J.K.R SB", genre:"adventure"},
-  {id:5, author_id: 3, title: "Richard FB", genre:"fiction"},
-  {id:6, author_id: 3, title: "Richard SB", genre:"adventure"}
-]
-
-  res.json(authors);
-});
->>>>>>> 14747cb321632e0b3a9c07830af9c93677da8d86
 
 const port = 5000;
 
